@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase numero 7</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        
+        <img src="/biblioteca.png" alt="Logo de la biblioteca" width="500" height="300">
+        <ul>
+            <li>Ciencia ficcion</li>
+            <li>Aventura</li>
+            <li>Historia</li>
+            <li>Fantasia</li>
+            <li>Poesia</li>
+            <li>Cuentos</li>
+            <li>Documental</li>
+            <li>Acerca de</li>
+        </ul>
+        <img src="/lupa.png" alt="Lupa de busqueda" width="50" height="50">
+    </header>
+    <h1>La biblioteca de la imaginacion</h1>
+    <p>La biblioteca de la imaginacion ofrece libros de gran interes para abrir tu imaginacion</p>
+    <h2>Registrate (si quieres) !</h2>
+    <form action="">
+        <label for="Nombre">Nombre</label>
+        <input type="text" id="nombre">
+        <label for="apellido">Apellidos</label>
+        <input type="text" name="apellido" id="apellido">
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email">
+        <button type="submit">Me quiero inscribir</button>
+    </form>
+    <h2>Comprar un libro</h2>
+    <form action="" method="POST">
+        <label for="libro">Selecciona el libro</label>
+        <select id="libro" name="libro" required>
+            <option value="ciencia_ficcion">Ciencia Ficción</option>
+            <option value="aventura">Aventura</option>
+            <option value="historia">Historia</option>
+            <option value="fantasia">Fantasía</option>
+            <option value="poesia">Poesía</option>
+            <option value="cuentos">Cuentos</option>
+            <option value="documental">Documental</option>
+        </select>
+        
+        <label for="cantidad">Cantidad</label>
+        <input type="number" id="cantidad" name="cantidad" min="1" value="1" required>
+        
+        <label for="direccion">Dirección de envío</label>
+        <input type="text" id="direccion" name="direccion" required>
+        
+        <label for="tarjeta">Número de tarjeta</label>
+        <input type="text" id="tarjeta" name="tarjeta" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+        
+        <button type="submit">Comprar libro</button>
+    </form>
+</body>
+</html>
